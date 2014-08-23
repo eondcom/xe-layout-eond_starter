@@ -7,14 +7,14 @@ Context::addMetaTag('X-UA-Compatible', 'IE=edge,chrome=1', true);﻿
 <!--// js 파일 import -->
 <!--%import("js/xe_official.js")-->
 <!--// 레이아웃과 연동될 css 파일 import -->
-<!--%import("css/globar.css")-->
+<!--%import("css/common.css")-->
 <!--@if($layout_info->colorset == "white")-->
     <!--%import("css/white.css")-->
 <!--@elseif($layout_info->colorset == "black")-->
     <!--%import("css/black.css")-->
 <!--@elseif($layout_info->colorset == "blu")-->
     <!--%import("css/blu.0.1.css")-->
-	<load target="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />	
+	<load target="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
 <!--@elseif($layout_info->colorset == "start")-->
     <!--%import("css/start.css")-->
 <!--@elseif($layout_info->colorset == "official")-->
@@ -124,7 +124,7 @@ body {  background:#FFFFFF url({getUrl()}{$layout_info->background_image}) repea
 			(adsbygoogle = window.adsbygoogle || []).push({});
 			</script>
 			</div>
-			<div class="bn"><a href="http://www.raonnet.com/invite2/xynex" target="_blank"><img src="./images/bn_raonnet_{$layout_info->colorset}.gif"></a></div>
+			<div class="bn blind"><a href="http://www.raonnet.com/invite2/xynex" target="_blank"><img src="./images/bn_raonnet_{$layout_info->colorset}.gif"></a></div>
 
 			<!-- 새 글 -->
 
@@ -183,7 +183,7 @@ body {  background:#FFFFFF url({getUrl()}{$layout_info->background_image}) repea
             <div id="content">{$content}</div>
 
         </div>
-		
+
 		<div style="position: absolute; right: -170px; top: 0;" cond="$li->colorset='blu'">
 		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		<!-- 웹디벨로퍼 위젯 -->
@@ -199,7 +199,7 @@ body {  background:#FFFFFF url({getUrl()}{$layout_info->background_image}) repea
 		<div style="position: absolute; right: -170px; top: 95px;" cond="$li->colorset='blu'">
 		<img class="zbxe_widget_output" widget="moonchat" skin="default" channel_name="eond" chat_width="160" chat_height="350" chat_skin="2" icon_type="4" />
 		</div>
-		
+
 		<div style="position: absolute; right: -170px; top: 455px;" cond="$li->colorset='blu'">
 		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		<!-- 웹디벨로퍼 우측 위젯 수평형 스카이스크래퍼 -->
